@@ -18,6 +18,6 @@ export class Task {
         this.level = level;
     }
 
-
-
 }
+
+
