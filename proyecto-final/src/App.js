@@ -14,6 +14,7 @@ import Ejemplo2Caso2           from './hooks/ejemplo2Caso2.jsx'
 import Ejemplo2Caso3           from './hooks/ejemplo2Caso3.jsx'
 import MiComponenteConContexto from './hooks/ejemplo3.jsx';
 import Ejemplo4                from './hooks/ejemplo4.jsx';
+import GreetingStyled from './components/pure/greetingStyled.jsx';
 //import LifeCycleExample from './components/pure/lifeCycleExample.jsx';
 
 
@@ -36,7 +37,7 @@ function App() {
         { /* <GreetingF name="Antonio"> </GreetingF> */}
 
         { /*Componente de Listado de Tareas */}
-        { /* <TaskListComponent> </TaskListComponent> */}
+        { /*<TaskListComponent> </TaskListComponent>*/}
 
         
         { /* **********  Ejemplos de uso de HOOKS  ********** */}
@@ -61,7 +62,12 @@ function App() {
           <h3> Contenido del props.children </h3>
         </Ejemplo4>
         <div className='linea'> </div>
-        
+
+        <GreetingStyled name="Antonio">
+
+        </GreetingStyled>
+        <div className='linea'> </div>
+
       </header>
 
     </div>
@@ -69,4 +75,4 @@ function App() {
   )
 }
 
-export default App;
+export default App
