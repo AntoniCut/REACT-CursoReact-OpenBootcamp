@@ -12,7 +12,7 @@
 */
 
 
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react'
 
 
 const Ejemplo2Caso1 = () => {
@@ -34,16 +34,15 @@ const Ejemplo2Caso1 = () => {
     }
 
 
-    //  Trabajando con UseEffect().
+    //  **********  Trabajando con UseEffect()  **********
 
     //  -----  Caso 1: Ejecutar SIEMPRE un snippet de código  -----
 
-    //    Cada vez que haya yn cambio en el estado del componente
+    //    Cada vez que haya un cambio en el estado del componente
     //    se ejecuta aquello que este dentro del useEffect.
 
     useEffect(() => {
-        console.log("*****  ejemplo2Caso1  *****")
-        console.log('CAMBIO EN EL ESTADO DEL COMPONENTE')
+        console.log("*****  ejemplo2Caso1  ***** CAMBIO EN EL ESTADO DEL COMPONENTE  *****")
         console.log('Mostrando referencia a elemento del DOM')
         console.log({ miRef })
     });
@@ -59,13 +58,15 @@ const Ejemplo2Caso1 = () => {
             { /*  Elemento Referenciado */ }
             <h4 ref={miRef}> Ejemplo de elemento referenciado </h4>
             
-                        { /*  Bloque de botones para actualizar el estado del componente  */}
-            <button onClick={incrementar1}> Incrementar Contador 1 </button>
-            <button onClick={incrementar2}> Incrementar Contador 2 </button>
+            { /*  Bloque de botones para actualizar el estado del componente  */}
+            <div>
+                <button onClick={incrementar1}> Incrementar Contador 1 </button>
+                <button onClick={incrementar2}> Incrementar Contador 2 </button>
+            </div>
             <br></br> <br></br>
 
         </div>
-    );
+    )
 }
 
-export default Ejemplo2Caso1;
+export default Ejemplo2Caso1

@@ -9,6 +9,7 @@
 import React, {useEffect} from 'react';
 
 
+//  **********  Componente de tipo 'Funcional'  **********
 
 const Allcycles = ()=> {
     

@@ -5,7 +5,7 @@
 //  *****  Componente 'task_list' para Listar todas las Tareas  **********
 
 
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Task } from '../../models/task.class'
 import { LEVELS } from '../../models/levels.enum';

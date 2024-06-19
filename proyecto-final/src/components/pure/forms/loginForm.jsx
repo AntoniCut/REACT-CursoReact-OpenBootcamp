@@ -4,7 +4,7 @@
 
 //  Componente que va ha contener un formulario para autenticacion de usuarios.
 
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 const Loginform = ()=> {
     
@@ -22,7 +22,7 @@ const Loginform = ()=> {
         <div>
             
         </div>
-    );
+    )
 }
 
-export default Loginform;
+export default Loginform

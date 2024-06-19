@@ -4,11 +4,11 @@
 
 //  *****  Componente 'Task' para pintar una Tarea  *****
 
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import {Task} from '../../models/task.class';
+import { Task } from '../../models/task.class';
 
-const TaskComponent = ({task}) => {
+const TaskComponent = ({ task }) => {
     
     
     useEffect(() => {
@@ -16,9 +16,9 @@ const TaskComponent = ({task}) => {
         console.log('Create Task')
 
         return ()=> {
-            console.log(`Task: ${task.name} is going to`)
+            console.log(`Task: ${task.name} is going to unmount`)
         };
-    }, [task]);   
+    }, [task])
     
     return (
         <div>

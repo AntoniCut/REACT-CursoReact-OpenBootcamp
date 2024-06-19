@@ -42,8 +42,7 @@ const Ejemplo2Caso3 = () => {
     //    Cada vez que haya yn cambio en contador 2, se ejecutara lo que diga useEffect()
 
     useEffect(() => {
-        console.log("*****  ejemplo2Caso3  *****")
-        console.log('CAMBIO EN EL ESTADO DEL CONTADOR 1 o CONTADOR 2')
+        console.log("*****  ejemplo2Caso3  *****  CAMBIO EN EL ESTADO DEL CONTADOR 1 o CONTADOR 2  *****")
         console.log('Mostrando referencia a elemento del DOM')
         console.log({ miRef })
     }, [contador1, contador2]);
@@ -60,8 +59,10 @@ const Ejemplo2Caso3 = () => {
             <h4 ref={miRef}> Ejemplo de elemento referenciado </h4>
 
             { /*  Bloque de botones para actualizar el estado del componente  */}
-            <button onClick={incrementar1}> Incrementar Contador 1 </button>
-            <button onClick={incrementar2}> Incrementar Contador 2 </button>
+            <div>
+                <button onClick={incrementar1}> Incrementar Contador 1 </button>
+                <button onClick={incrementar2}> Incrementar Contador 2 </button>
+            </div>
             <br></br> <br></br>
 
         </div>

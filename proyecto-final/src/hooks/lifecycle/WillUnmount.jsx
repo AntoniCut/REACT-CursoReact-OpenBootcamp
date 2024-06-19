@@ -35,7 +35,7 @@ export const WillUnMountHook = () => {
 
     useEffect(() => {
         
-        //  aqui no ponemos nada.
+        //  ----------  aqui no ponemos nada  ----------
 
         return ()=> {
             console.log('Comportamiento antes de que el componente desaparezca')

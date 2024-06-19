@@ -4,9 +4,9 @@
 
 //  Componente que va ha contener un formulario para autenticacion de usuarios.
 
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
-const Registerform = ()=> {
+const Registerform = () => {
     
     const initialData = [
         {
@@ -24,7 +24,7 @@ const Registerform = ()=> {
         <div>
             
         </div>
-    );
+    )
 }
 
 export default Registerform

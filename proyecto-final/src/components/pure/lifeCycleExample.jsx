@@ -5,8 +5,8 @@
 //  Ejemplo de componente de tipo clase que dispone de los
 //  métodos de ciclo de vida.
 
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react'
+//import PropTypes from 'prop-types'
 
 
 //  **********  Componente de Clase  **********
@@ -20,7 +20,7 @@ class LifeCycleExample extends Component {
     }
 
     componentWillMount() {
-        console.log('WILLMOUNT: Antes de el montaje del componente')
+        console.log('WILLMOUNT: Antes del montaje del componente')
     }
 
     componentDidMount() {
@@ -53,14 +53,14 @@ class LifeCycleExample extends Component {
             <div>
                 
             </div>
-        );
+        )
     }
 }
 
-
+/*
 LifeCycleExample.propTypes = {
 
-};
+}
+*/
 
-
-export default LifeCycleExample;
+export default LifeCycleExample

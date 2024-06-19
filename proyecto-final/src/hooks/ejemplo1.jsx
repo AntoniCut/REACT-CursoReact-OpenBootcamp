@@ -22,7 +22,6 @@ const Ejemplo1 = () => {
     const personaInicial = {
         nombre: 'Antonio',
         email:  'antonicut@gmail.com'
-        
     }
 
     //  Queremos que el VALORINICIAL y PERSONAINICIAL sean
@@ -35,7 +34,6 @@ const Ejemplo1 = () => {
     const [contador, setcontador] = useState(valorInicial)
     const [persona, setPersona]   = useState(personaInicial)
 
-    
     // Funcion para actualizar el estado privado que contiene el contador.
     function incrementarContador() {
 
@@ -45,12 +43,13 @@ const Ejemplo1 = () => {
 
     // Funcion para actualizar el estado de persona en el componente. 
     function actualizarPersona() {
+        
+        //  funcionParaCambiar(nuevoValor).
         setPersona({
             nombre: 'Pepe',
             email:  'pepeluis@gmail.com'
         })
     }
-
     
     return (
         <div>
@@ -62,14 +61,16 @@ const Ejemplo1 = () => {
             <h3> Email: {persona.email} </h3>
 
             { /*  Bloque de botones para actualizar el estado del componente  */}
-            <button onClick={incrementarContador}> Incrementar Contador </button>
-            <button onClick={actualizarPersona}> Actualizar Persona </button>
+            <div>
+                <button onClick={incrementarContador}> Incrementar Contador </button>
+                <button onClick={actualizarPersona}> Actualizar Persona </button>
+            </div>
             <br></br> <br></br>
 
         </div>
-    );
+    )
 }
 
-export default Ejemplo1;
+export default Ejemplo1
 
 

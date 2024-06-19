@@ -3,7 +3,7 @@
 //  **********************************************************
 
 //  Ejemplo de uso del metodo componentDidUpdate 'ciclo de vida en componente clase'.
-//  Y el hook de              componentDidUpdate 'ciclo de vida en componente funcional'.
+//  Y uso del hook de         componentDidUpdate 'ciclo de vida en componente funcional'.
 
 
 import React, { Component, useEffect } from 'react'
@@ -12,7 +12,7 @@ import React, { Component, useEffect } from 'react'
 //  **********  Componente de tipo 'Clase'  **********
 
 export class DidUpdate extends Component {
-  
+
   componentDidUpdate() {
     console.log('Comportamiento cuando el componente recibe nuevos props o cambio en su estado privado')
   }
@@ -27,10 +27,9 @@ export class DidUpdate extends Component {
 }
 
 
-
 //  **********  Componente de tipo 'Función'  **********
 
-export const DidMountHook = () => {
+export const DidUpdatetHook = () => {
 
     useEffect(() => {
         console.log('Comportamiento cuando el componente recibe nuevos props o cambio en su estado privado')
@@ -38,7 +37,7 @@ export const DidMountHook = () => {
 
     return (
         <div>
-            <h1> DidMountHook </h1>
+            <h1> DidUpdateHook </h1>
         </div>
     )
 }

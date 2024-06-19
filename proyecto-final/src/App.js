@@ -14,9 +14,11 @@ import Ejemplo2Caso2           from './hooks/ejemplo2Caso2.jsx'
 import Ejemplo2Caso3           from './hooks/ejemplo2Caso3.jsx'
 import MiComponenteConContexto from './hooks/ejemplo3.jsx';
 import Ejemplo4                from './hooks/ejemplo4.jsx';
+//import LifeCycleExample from './components/pure/lifeCycleExample.jsx';
 
 
 function App() {
+  
   return (
 
     <div className="App">
@@ -57,9 +59,9 @@ function App() {
         <Ejemplo4 nombre="Antonio">
           {/* Todo lo que hay aqui dentro es tratado como props.children */}
           <h3> Contenido del props.children </h3>
-         </Ejemplo4>
+        </Ejemplo4>
         <div className='linea'> </div>
-
+        
       </header>
 
     </div>

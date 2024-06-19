@@ -19,7 +19,6 @@ import React, {useState, useContext} from 'react';
 const miContexto = React.createContext(null)
 
 
-
 //  **********  Componente 1  **********  
 //      -  dispone de un contexto que va a tener un valor que recibe desde el padre.
 
@@ -32,7 +31,7 @@ const Componente1 = () => {
             <h1> El Token es: {state.token} </h1>     
 
             { /* Pintamos el Componente2 */}      
-            <Componente2></Componente2>
+            <Componente2> </Componente2>
 
         </div>
     );
@@ -55,7 +54,7 @@ const Componente2 = () => {
 }
 
 
-
+//  **********  MiComponenteContexto  **********  
 export default function MiComponenteConContexto() {
 
     const estadoInicial = {
@@ -80,9 +79,9 @@ export default function MiComponenteConContexto() {
             {/* Todo lo que esta aqui dentro puede leer los datos de sessionData */}
             {/* Ademas, si se actualiza, los componentes de aqui, tambien lo actualizan */}
 
-            <h1>  ***  Ejemplo de useState() y useContext()  ***</h1>
+            <h1>  ***  Ejemplo de useState() y useContext()  *** </h1>
             <Componente1> </Componente1>
-            <button onClick={actualizarSesion}> Actualizar Sesíon </button>
+            <button onClick={actualizarSesion}> Actualizar Sesión </button>
 
         </miContexto.Provider>
     )
